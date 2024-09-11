@@ -40,6 +40,16 @@ export class UserModel extends BaseModel {
     const user = await query;
     return user;
   }
+
+  static async getUserPermissions(id: string) {
+    const query = this.queryBuilder()
+      .select("role")
+      .table("users")
+      .where({ id: +id })
+      .first();
+    const data = await query;
+    return data.role;
+  }
 }
 
 export const users: User[] = [];
