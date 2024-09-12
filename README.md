@@ -18,6 +18,9 @@
 ## Database Setup
 * Install PostgreSQL and create a .env file in the backend directory with the necessary variables. Refer to the .env.example file for guidance.
 
+## Admin Credentials
+* Find admin credentials in seed file
+
 ## API Endpoints
 
 ### Users
@@ -30,9 +33,9 @@
 
 ### Grocery (Requires authentication)
 - `GET /grocery`: Retrieve all grocery lists
-- `POST /grocery/add`: Add a new grocery
-- `PUT /grocery/update/{id}`: Update an existing grocery by ID
-- `DELETE /grocery/delete/{id}`: Delete a grocery by ID
+- `POST /grocery/add`: Add a new grocery 
+- `PUT /grocery/update/{id}`: Update an existing grocery by ID 
+- `DELETE /grocery/delete/{id}`: Delete a grocery by ID 
 
 
 ### Order
